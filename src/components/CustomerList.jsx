@@ -7,7 +7,7 @@ const CustomerList = () => {
   const users=useSelector((state)=>state.users)
 
   return (
-    <div>
+    <div className='overflow-auto'>
     <div className="container">
       <div className="row">
         <div className="col-md-12 text-center text-primary fs-3 my-4">Customer List</div>
