@@ -33,7 +33,6 @@ You may also see any lint errors in the console.
 
  login page with validation
 
- A functionallity to add new input fields with labels ( product name, product quantity, product price, total price ) 
+ A functionallity to add new input fields with labels ( product name, product quantity, product price, total price ) and Implement a functionality on button click that would open a success modal which shows success message text After success the bill data should be added in customers list  in bill generator
 
- success modal after successfully save data
 
