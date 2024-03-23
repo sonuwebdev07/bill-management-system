@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <>
-    <section className="vh-100 overflow-auto">
+    <section className="vh-100">
     <div className="container">
       <div className="row">
         <div className="col-md-12">

@@ -50,12 +50,8 @@ const Billgenerator = () => {
         }
     }
 
-   
-
-
-
   return (
-    <div className='overflow-auto'>
+    <div>
       <div className="container">
         <div className="row">
             <div className="col-md-12 my-4 text-center fs-3 text-primary">Bill Generator</div>
