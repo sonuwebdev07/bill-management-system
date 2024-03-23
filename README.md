@@ -1,4 +1,4 @@
-# Bill MANAGEMENT SYSYTEM
+# Bill MANAGEMENT SYSTEM
 
 This project was created with [ react-vite-app, redux]
 
