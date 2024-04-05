@@ -1,41 +1,19 @@
 import React from 'react'
 import './login.css'
-import { Link } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
+  const navigate=useNavigate();
+
   const submitBtn = (e) => {
     e.preventDefault();
+    navigate('/bill-generator')
 }
 
   return (
     <>
-    <section className="vh-100">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12">
-        <a className="btn btn-primary float-end mt-4" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-        <i className="fa-solid fa-bars" style={{color: "#ecebf0"}}></i>
-      </a>
-      <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div className="offcanvas-header">
-          <h5 className="offcanvas-title text-primary" id="offcanvasExampleLabel">Bill Management System</h5>
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div className="offcanvas-body">
-          <div>
-            <div>
-              <Link className='btn btn-primary mb-3 d-grid' to='customer-list'>Customer List</Link>
-            </div>
-            <div>
-              <Link className='btn btn-primary  d-grid' to='bill-generator'>Bill Generator</Link>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
-    </div>
+    <section className="vh-100md">
     <div className="container-fluid h-custom">
       <div className="row d-flex justify-content-center align-items-center h-100">
         <div className="col-md-9 col-lg-6 col-xl-5">
@@ -75,7 +53,7 @@ const Login = () => {
                 placeholder="Enter password" required/> 
             </div>
             <div className="text-center text-lg-start mt-4 pt-2">
-                <input type="submit" className="btn btn-primary btn-lg mb-3" style={{paddingLeft: "2.5rem", paddingRight: "2.5rem"}} value="Login" />
+                <input type="submit" value="Login" className="btn btn-primary btn-lg mb-3" style={{paddingLeft: "2.5rem", paddingRight: "2.5rem"}} />
             </div>
           </form>
         </div>

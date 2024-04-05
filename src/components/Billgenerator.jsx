@@ -52,6 +52,33 @@ const Billgenerator = () => {
 
   return (
     <div>
+    {/*Canvas Start*/}
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+        <a className="btn btn-primary float-end mt-4" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <i className="fa-solid fa-bars" style={{color: "#ecebf0"}}></i>
+      </a>
+      <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div className="offcanvas-header">
+          <h5 className="offcanvas-title text-primary" id="offcanvasExampleLabel">Bill Management System</h5>
+          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div className="offcanvas-body">
+          <div>
+            <div>
+              <Link className='btn btn-primary mb-3 d-grid' to='/customer-list'>Customer List</Link>
+            </div>
+            <div>
+              <Link className='btn btn-primary  d-grid' to='/bill-generator'>Bill Generator</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  {/*Canvas End*/}
       <div className="container">
         <div className="row">
             <div className="col-md-12 my-4 text-center fs-3 text-primary">Bill Generator</div>
@@ -60,7 +87,7 @@ const Billgenerator = () => {
       <div className="container">
       <div className="row">
         <div className="col-md-12">
-          <Link className='nav-link text-primary my-3'  to='/'><i className="fa-solid fa-arrow-left mx-1"></i> Go to Home </Link>
+          <Link className='nav-link text-primary my-3'  to='/'><i className="fa-solid fa-arrow-left mx-1"></i>Log out</Link>
         </div>
       </div>
     </div>

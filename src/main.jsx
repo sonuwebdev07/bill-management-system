@@ -11,7 +11,7 @@ import UserReducer from './redux/UserReducer.jsx'
 
 const store = configureStore({
   reducer:{
-    users: UserReducer
+    users: UserReducer,
   }
 })
 

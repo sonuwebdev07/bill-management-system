@@ -16,7 +16,7 @@ const CustomerList = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12">
-          <Link className='nav-link text-primary my-3'  to='/'><i className="fa-solid fa-arrow-left mx-1"></i> Go to Home </Link>
+          <Link className='nav-link text-primary my-3'  to='/bill-generator'><i className="fa-solid fa-arrow-left mx-1"></i> Generate Bill </Link>
         </div>
       </div>
     </div>
